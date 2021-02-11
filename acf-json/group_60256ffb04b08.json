@@ -1,11 +1,11 @@
 {
-    "key": "group_601abaaaa2655",
-    "title": "Βιβλιογραφία",
+    "key": "group_60256ffb04b08",
+    "title": "Προβολή",
     "fields": [
         {
-            "key": "field_601abab2271fe",
-            "label": "Βιβλιογραφία",
-            "name": "books",
+            "key": "field_6025700146978",
+            "label": "Αναφορές",
+            "name": "anafores",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -19,13 +19,13 @@
             "min": 0,
             "max": 0,
             "layout": "row",
-            "button_label": "Προσθήκη βιβλίου",
+            "button_label": "Προσθήκη νέας",
             "sub_fields": [
                 {
-                    "key": "field_6025695274365",
-                    "label": "Συγγραφέας",
-                    "name": "author",
-                    "type": "text",
+                    "key": "field_6025705146979",
+                    "label": "Εικόνα",
+                    "name": "image",
+                    "type": "image",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -34,14 +34,19 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
                 },
                 {
-                    "key": "field_601abae98cd33",
+                    "key": "field_60257117e5201",
                     "label": "Τίτλος",
                     "name": "title",
                     "type": "text",
@@ -60,9 +65,26 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_6025699074366",
-                    "label": "Εκδοτικός",
-                    "name": "publisher",
+                    "key": "field_6025705f4697a",
+                    "label": "Ημ\/νια",
+                    "name": "date",
+                    "type": "date_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d\/m\/Y",
+                    "return_format": "d\/m\/Y",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_6025709c4697b",
+                    "label": "Πρόσθετα",
+                    "name": "notes",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -79,8 +101,8 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_601abaff8cd34",
-                    "label": "Σύνδεσμος",
+                    "key": "field_602570ac4697c",
+                    "label": "Link",
                     "name": "link",
                     "type": "url",
                     "instructions": "",
@@ -102,7 +124,7 @@
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "page-vivliografia.php"
+                "value": "page-provoli.php"
             }
         ]
     ],
@@ -114,5 +136,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1613064610
+    "modified": 1613066881
 }

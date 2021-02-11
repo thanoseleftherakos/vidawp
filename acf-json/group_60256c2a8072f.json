@@ -1,11 +1,11 @@
 {
-    "key": "group_601abaaaa2655",
-    "title": "Βιβλιογραφία",
+    "key": "group_60256c2a8072f",
+    "title": "Μελέτες",
     "fields": [
         {
-            "key": "field_601abab2271fe",
-            "label": "Βιβλιογραφία",
-            "name": "books",
+            "key": "field_60256c35dfab9",
+            "label": "Μελέτες",
+            "name": "meletes",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -18,11 +18,11 @@
             "collapsed": "",
             "min": 0,
             "max": 0,
-            "layout": "row",
-            "button_label": "Προσθήκη βιβλίου",
+            "layout": "block",
+            "button_label": "Προσθήκη μελέτης",
             "sub_fields": [
                 {
-                    "key": "field_6025695274365",
+                    "key": "field_60256c70dfaba",
                     "label": "Συγγραφέας",
                     "name": "author",
                     "type": "text",
@@ -41,7 +41,7 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_601abae98cd33",
+                    "key": "field_60256c88dfabb",
                     "label": "Τίτλος",
                     "name": "title",
                     "type": "text",
@@ -60,29 +60,10 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_6025699074366",
-                    "label": "Εκδοτικός",
-                    "name": "publisher",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_601abaff8cd34",
-                    "label": "Σύνδεσμος",
+                    "key": "field_60256c92dfabc",
+                    "label": "Link",
                     "name": "link",
-                    "type": "url",
+                    "type": "file",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -91,8 +72,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": ""
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
                 }
             ]
         }
@@ -100,9 +84,9 @@
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "page_template",
                 "operator": "==",
-                "value": "page-vivliografia.php"
+                "value": "page-meletes.php"
             }
         ]
     ],
@@ -114,5 +98,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1613064610
+    "modified": 1613065973
 }
